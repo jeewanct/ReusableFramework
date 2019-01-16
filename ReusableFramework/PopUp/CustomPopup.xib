@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CustomPopup" id="iN0-l3-epB" customClass="CustomPopup" customModule="ReusableFramework">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPY-Yz-2Fa" customClass="CardView" customModule="ReusableFramework" customModuleProvider="target">
+                    <rect key="frame" x="19" y="150" width="337.5" height="367"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="UAN-d0-tUb">
+                            <rect key="frame" x="8" y="8" width="310" height="56"/>
+                            <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3iy-nX-beN">
+                            <rect key="frame" x="8" y="64" width="240" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="3iy-nX-beN" secondAttribute="bottom" constant="8" id="6Wh-PA-a7r"/>
+                        <constraint firstAttribute="trailing" secondItem="3iy-nX-beN" secondAttribute="trailing" constant="8" id="94g-mo-Pdr"/>
+                        <constraint firstAttribute="trailing" secondItem="UAN-d0-tUb" secondAttribute="trailing" constant="8" id="HVv-HG-baf"/>
+                        <constraint firstItem="3iy-nX-beN" firstAttribute="top" secondItem="UAN-d0-tUb" secondAttribute="bottom" id="cEm-5M-v2v"/>
+                        <constraint firstItem="UAN-d0-tUb" firstAttribute="leading" secondItem="mPY-Yz-2Fa" secondAttribute="leading" constant="8" id="e4t-J2-2IA"/>
+                        <constraint firstItem="3iy-nX-beN" firstAttribute="leading" secondItem="mPY-Yz-2Fa" secondAttribute="leading" constant="8" id="mgZ-ee-EBm"/>
+                        <constraint firstItem="UAN-d0-tUb" firstAttribute="top" secondItem="mPY-Yz-2Fa" secondAttribute="top" constant="8" id="uWz-kp-AhL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.64840999119718312" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mPY-Yz-2Fa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0kd-Bf-VmG"/>
+                <constraint firstItem="mPY-Yz-2Fa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QB9-8u-vz9"/>
+                <constraint firstItem="mPY-Yz-2Fa" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.55" id="qJM-Za-jrG"/>
+                <constraint firstItem="mPY-Yz-2Fa" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="qln-r2-G0E"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="searchBar" destination="UAN-d0-tUb" id="5RV-9B-Q8B"/>
+                <outlet property="tableView" destination="3iy-nX-beN" id="IMb-Cj-h34"/>
+            </connections>
+            <point key="canvasLocation" x="109" y="31"/>
+        </view>
+    </objects>
+</document>

@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E60246654ABA396409B211D /* Pods_ReusableFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A4E65E10DB9BA4F78CEE2A /* Pods_ReusableFramework.framework */; };
+		DBC3BA8021E668C000E5BE2F /* CustomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3BA7F21E668C000E5BE2F /* CustomPopup.swift */; };
+		DBC3BA8221E66CCD00E5BE2F /* CustomPopupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3BA8121E66CCD00E5BE2F /* CustomPopupCell.swift */; };
 		DBC5A35921E3A46B00D615BF /* ReusableFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC5A35721E3A46B00D615BF /* ReusableFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBC5A36521E3A48F00D615BF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5A35F21E3A48E00D615BF /* CardView.swift */; };
+		DBC5A36621E3A48F00D615BF /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5A36021E3A48F00D615BF /* Networking.swift */; };
+		DBC5A36721E3A48F00D615BF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5A36121E3A48F00D615BF /* Reachability.swift */; };
+		DBC5A36821E3A48F00D615BF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5A36221E3A48F00D615BF /* NetworkError.swift */; };
+		DBC5A36921E3A48F00D615BF /* NetworkProtcols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5A36321E3A48F00D615BF /* NetworkProtcols.swift */; };
+		DBC5A36A21E3A48F00D615BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC5A36421E3A48F00D615BF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F485AF7867E24CABB43E340 /* Pods-ReusableFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableFramework/Pods-ReusableFramework.release.xcconfig"; sourceTree = "<group>"; };
+		76A4E65E10DB9BA4F78CEE2A /* Pods_ReusableFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReusableFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC3BA7F21E668C000E5BE2F /* CustomPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopup.swift; sourceTree = "<group>"; };
+		DBC3BA8121E66CCD00E5BE2F /* CustomPopupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupCell.swift; sourceTree = "<group>"; };
 		DBC5A35421E3A46B00D615BF /* ReusableFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReusableFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC5A35721E3A46B00D615BF /* ReusableFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableFramework.h; sourceTree = "<group>"; };
 		DBC5A35821E3A46B00D615BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC5A35F21E3A48E00D615BF /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DBC5A36021E3A48F00D615BF /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		DBC5A36121E3A48F00D615BF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DBC5A36221E3A48F00D615BF /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DBC5A36321E3A48F00D615BF /* NetworkProtcols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtcols.swift; sourceTree = "<group>"; };
+		DBC5A36421E3A48F00D615BF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE13529555CE1AAECF4A3C4E /* Pods-ReusableFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableFramework/Pods-ReusableFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +41,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E60246654ABA396409B211D /* Pods_ReusableFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22D6BDA7C7C1BEF16280639D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE13529555CE1AAECF4A3C4E /* Pods-ReusableFramework.debug.xcconfig */,
+				1F485AF7867E24CABB43E340 /* Pods-ReusableFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B0DC4133CC6B2CE05656E2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76A4E65E10DB9BA4F78CEE2A /* Pods_ReusableFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBC3BA7E21E668AD00E5BE2F /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				DBC3BA7F21E668C000E5BE2F /* CustomPopup.swift */,
+				DBC3BA8121E66CCD00E5BE2F /* CustomPopupCell.swift */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
 		DBC5A34A21E3A46B00D615BF = {
 			isa = PBXGroup;
 			children = (
 				DBC5A35621E3A46B00D615BF /* ReusableFramework */,
 				DBC5A35521E3A46B00D615BF /* Products */,
+				22D6BDA7C7C1BEF16280639D /* Pods */,
+				9B0DC4133CC6B2CE05656E2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +95,13 @@
 		DBC5A35621E3A46B00D615BF /* ReusableFramework */ = {
 			isa = PBXGroup;
 			children = (
+				DBC3BA7E21E668AD00E5BE2F /* PopUp */,
+				DBC5A35F21E3A48E00D615BF /* CardView.swift */,
+				DBC5A36421E3A48F00D615BF /* Constants.swift */,
+				DBC5A36221E3A48F00D615BF /* NetworkError.swift */,
+				DBC5A36021E3A48F00D615BF /* Networking.swift */,
+				DBC5A36321E3A48F00D615BF /* NetworkProtcols.swift */,
+				DBC5A36121E3A48F00D615BF /* Reachability.swift */,
 				DBC5A35721E3A46B00D615BF /* ReusableFramework.h */,
 				DBC5A35821E3A46B00D615BF /* Info.plist */,
 			);
@@ -70,6 +126,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBC5A35C21E3A46B00D615BF /* Build configuration list for PBXNativeTarget "ReusableFramework" */;
 			buildPhases = (
+				6C9C5CFDAA1DEBE167E79BC7 /* [CP] Check Pods Manifest.lock */,
 				DBC5A34F21E3A46B00D615BF /* Headers */,
 				DBC5A35021E3A46B00D615BF /* Sources */,
 				DBC5A35121E3A46B00D615BF /* Frameworks */,
@@ -95,6 +152,7 @@
 				TargetAttributes = {
 					DBC5A35321E3A46B00D615BF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -125,11 +183,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C9C5CFDAA1DEBE167E79BC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReusableFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBC5A35021E3A46B00D615BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC5A36521E3A48F00D615BF /* CardView.swift in Sources */,
+				DBC5A36821E3A48F00D615BF /* NetworkError.swift in Sources */,
+				DBC5A36921E3A48F00D615BF /* NetworkProtcols.swift in Sources */,
+				DBC3BA8021E668C000E5BE2F /* CustomPopup.swift in Sources */,
+				DBC5A36621E3A48F00D615BF /* Networking.swift in Sources */,
+				DBC5A36721E3A48F00D615BF /* Reachability.swift in Sources */,
+				DBC5A36A21E3A48F00D615BF /* Constants.swift in Sources */,
+				DBC3BA8221E66CCD00E5BE2F /* CustomPopupCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +347,9 @@
 		};
 		DBC5A35D21E3A46B00D615BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE13529555CE1AAECF4A3C4E /* Pods-ReusableFramework.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.accounting.ReusableFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,7 +374,9 @@
 		};
 		DBC5A35E21E3A46B00D615BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F485AF7867E24CABB43E340 /* Pods-ReusableFramework.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
